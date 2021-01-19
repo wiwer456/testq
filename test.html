@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>тест</title>
+</head>
+<body>
+<!-- классы -->	
+<style type="text/css">
+	.d-n0{
+		display: ;
+	}
+	.d-n1{
+		display: none;
+	}
+	.d-n2{
+		display: none;
+	}
+	.d-n3{
+		display: none;
+	}
+	.d-n4{
+		display: none;
+	}
+	.d-n5{
+		display: none;
+	}
+	.d-n6{
+		display: none;
+	}
+	.main{
+		height: 570px;
+		width: 700px;
+		background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	.img{
+		width: 100%
+	}
+    .w-1{
+       color: orange
+    }
+    .w-2{
+       color: grey
+    }
+    .w-3{
+       color: purple
+    }
+    .w-4{
+       color: blue
+    }
+    .w-5{
+       color: orange
+    }
+    .w-6{
+       color: green
+    }
+    .w-7{
+       color: cyan
+    }
+    .w-8{
+       color: yellow
+    }
+    .w-9{
+       color: lightblue
+    }
+        .w-10{
+        color: purple
+	    }
+	    .w-11{
+	       color: blue
+	    }
+	    .w-12{
+	       color: orange
+	    }
+    .m-0{
+    	margin: 0px
+    }
+    .m-t{
+    	margin-top: 30px
+    }
+    .t-a{
+    	text-align: center;
+    }
+    .c1{
+    	background-color: lightblue
+    }
+    .hw{
+       height: 30px
+       width: 50px;
+    }
+</style>
+<!----><!----><!----><!----><!----><!----><!----><!---->
+<div class="main d-n0 t-a">
+	<h3 class="">тест по</h3>
+	<h1 class="">SuperMechs</h1>
+	<button class="b">Начать</button>
+</div>
+<div class="main d-n3">
+	<h1>какая редкость у модуля на картинке?</h1>
+		<img src="1-3.png" class="img">
+			<div>
+				<h1 class="w-1 m-0 m-t">"легендарная"</h1>
+			</div>
+			<div>
+				<h1 class="w-2 m-0">"обычная"</h1>
+			</div>
+			<div>
+				<h1 class="w-3 m-0">"эпическая"</h1>
+			</div>
+</div>
+<!--2-->
+	<div class="main d-n1">
+		<h1>как называется?</h1>
+			<img src="2.jpg" class="img">
+				<div>
+					<h1 class="w-4 m-0">"мега бокс"</h1>
+				</div>
+				<div>
+					<h1 class="w-5 m-0">"fable" кейс</h1>
+				</div>
+				<div>
+					<h1 class="w-6 m-0">"премиум пак"</h1>
+				</div>
+			</div>
+<!--3-->
+		<div class="main d-n2">
+			<h1>а теперь сколько он стоит?</h1>
+				<img src="2 — 2.jpg" class="img">
+					<div>
+						<h1 class="w-7 m-0">20 токенов</h1>
+					</div>
+					<div>
+						<h1 class="w-8 m-0">335 токенов</h1>
+					</div>
+					<div>
+						<h1 class="w-9 m-0">578 токенов</h1>
+					</div>
+		</div>
+<!--конец1-->		
+			<div class="main d-n5 t-a ">
+				<h1>а ты хорош!</h1>
+				<h4>это всё </h4>
+                
+			</div>
+
+
+<!-- скрипт -->
+<script type="text/javascript">
+	document.querySelector('.w-1').onclick = function(){
+		alert('ага')
+		document.querySelector('.d-n3').style.display = 'none'
+		document.querySelector('.d-n1').style.display = 'block'
+    }
+    document.querySelector('.w-6').onclick = function(){
+		alert('правильно!')
+		document.querySelector('.d-n1').style.display = 'none'
+		document.querySelector('.d-n2').style.display = 'block'
+    }
+    document.querySelector('.w-8').onclick = function(){
+		alert('так держать!')
+		document.querySelector('.d-n2').style.display = 'none'
+		document.querySelector('.d-n5').style.display = 'block'
+    }
+    document.querySelector('.b').onclick = function(){
+		
+		document.querySelector('.d-n0').style.display = 'none'
+		document.querySelector('.d-n3').style.display = 'block'
+    }
+
+
+    document.querySelector('.w-2').onclick = function(){
+    	alert('не-а')
+    }
+    document.querySelector('.w-3').onclick = function(){
+    	alert('не угодал')
+    }
+    document.querySelector('.w-4').onclick = function(){
+    	alert('мимо')
+    }
+    document.querySelector('.w-5').onclick = function(){
+    	alert('не верно')
+    }
+    document.querySelector('.w-7').onclick = function(){
+    	alert('рядом, но нет')
+    }
+    document.querySelector('.w-9').onclick = function(){
+    	alert('слишком много')
+    }
+    
+
+
+    document.querySelector('.d-n5').onclick = function(){
+		alert('продолжим')
+		document.querySelector('.d-n5').style.display = 'none'
+		document.querySelector('.d-n6').style.display = 'block'
+    }
+</script>
+</body>
+</html>
